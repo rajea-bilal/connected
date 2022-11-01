@@ -1,0 +1,64 @@
+<%- include('partials/header') -%>
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-6">
+
+
+<h1><%= user.userName %>'s Quote Bank</h1>
+<p>All your quotes in one place</p>
+
+
+
+    <div class="mt-5">
+      <h2>Add a quote</h2>
+      <form action="/quote/createQuote/<%=user._id%>"  method="POST">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title">
+          </div>
+
+          <div class="mb-3">
+            <label for="quote" class="form-label">Quote</label>
+            <input type="text" class="form-control" id="quote" name="quote">
+          </div>
+          
+           
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+      
+    
+
+
+
+
+        <div class="col-6 mt-5">
+        <a class="btn btn-primary" href="/profile">Return to Profile</a>
+        <a class="btn btn-primary" href="/feed">Return to Feed</a>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+<%- include('partials/footer') -%>
+
+
+
+  
+
+         
+
+
+
+
+  
+
+   
+   
+
+
+   
+
+   
+
